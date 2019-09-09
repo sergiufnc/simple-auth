@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+<div class="container">
+    <form method="post" action="/sign-up" class="form">
+        <h1>Sign Up</h1>
+        <p>Create an account to continue</p>
+
+        <% include partials/alerts %>
+
+        <fieldset class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required placeholder="" class="form-control">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required placeholder="" class="form-control">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="confirm">Confirm:</label>
+            <input id="confirm" type="password" name="confirm" required placeholder="" class="form-control">
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            <div style="text-align: center; margin: 20px 0">Have an account? <a href="/sign-in">Sign In</a></div>
+        </div>
+    </form>
+</div>
+
+<% include partials/footer %>

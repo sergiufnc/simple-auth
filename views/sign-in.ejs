@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class="container">
+    <form method="post" action="/sign-in" class="form">
+        <h1>Sign In</h1>
+        <p>Continue to your account</p>
+
+        <% include partials/alerts %>
+
+        <fieldset class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required placeholder="" class="form-control">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required placeholder="" class="form-control">
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <div style="text-align: center; margin: 20px 0">No account? <a href="/sign-up">Sign Up</a></div>
+        </div>
+    </form>
+</div>
+
+<% include partials/footer %>
